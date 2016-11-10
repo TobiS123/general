@@ -1,3 +1,18 @@
 Entfernen der seo_* divs mit "return;" in der functions.php
 Zeile:
 1782
+
+10.11.2016
+Qode Options: show blog author - yes
+
+Email von Autor entfernt: File/Zeile/Code
+blog-single-image-title-post-loop.php
+166
+<span class="author_email"><?php echo get_the_author_meta('email'); ?></span>
+
+blog_single-loop.php
+307
+<span class="author_email"><?php echo get_the_author_meta('email'); ?></span>
+
+entry_title ersetzt zu entry-title in allen Files:
+find /srv/www/www.flypsite.com/htdocs/wp-content/themes/bridge -type f -exec sed -i 's/entry_title/entry-title/g' {} \;
