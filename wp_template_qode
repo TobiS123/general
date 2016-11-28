@@ -16,3 +16,7 @@ blog_single-loop.php
 
 entry_title ersetzt zu entry-title in allen Files:
 find /srv/www/www.flypsite.com/htdocs/wp-content/themes/bridge -type f -exec sed -i 's/entry_title/entry-title/g' {} \;
+
+22.11.2016
+Autor feld gefixt: class="fu" zu class="fn" im Autor unter Blog-Posts ersetzt.
+find /srv/www/www.flypsite.com/htdocs/wp-content/themes/bridge -type f -exec sed -i 's/class="fu"/class="fn"/g' {} \;
